@@ -1,0 +1,115 @@
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+progress[value] {
+  width: 100%;
+  height: 20px;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 20px;
+}
+.container {
+  position: relative;
+  margin-bottom: 20px;
+}
+.value {
+  position: absolute;
+  bottom: 11%;
+  left: 45%;
+  color: #3f3f3f;
+  font-size: 12px;
+  font-family: "DM Sans", sans-serif;
+}
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 16px;
+  border: 1px solid #eee;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.blue > progress[value]::-webkit-progress-value {
+  background: skyblue;
+  background-image: -webkit-linear-gradient(
+    -45deg,
+    transparent 33%,
+    rgba(0, 0, 0, 0.1) 33%,
+    rgba(0, 0, 0, 0.1) 66%,
+    transparent 66%
+  );
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+.green > progress[value]::-webkit-progress-value {
+  background: lightgreen;
+  background-image: -webkit-linear-gradient(
+    -45deg,
+    transparent 33%,
+    rgba(0, 0, 0, 0.1) 33%,
+    rgba(0, 0, 0, 0.1) 66%,
+    transparent 66%
+  );
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+.white > progress[value]::-webkit-progress-value {
+  background: white;
+  background-image: -webkit-linear-gradient(
+    -45deg,
+    transparent 33%,
+    rgba(0, 0, 0, 0.1) 33%,
+    rgba(0, 0, 0, 0.1) 66%,
+    transparent 66%
+  );
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+.pink > progress[value]::-webkit-progress-value {
+  background: lightpink;
+  background-image: -webkit-linear-gradient(
+    -45deg,
+    transparent 33%,
+    rgba(0, 0, 0, 0.1) 33%,
+    rgba(0, 0, 0, 0.1) 66%,
+    transparent 66%
+  );
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+.yellow > progress[value]::-webkit-progress-value {
+  background: yellow;
+  background-image: -webkit-linear-gradient(
+    -45deg,
+    transparent 33%,
+    rgba(0, 0, 0, 0.1) 33%,
+    rgba(0, 0, 0, 0.1) 66%,
+    transparent 66%
+  );
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+progress[value]::-webkit-progress-value {
+  border-radius: 16px;
+  transition: all 0.5s ease-in-out;
+}
+.btn {
+  border-radius: 8px;
+  border-style: none;
+  margin: 0 auto;
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+  color: white;
+  background-color: lightgreen;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  opacity: 0.9;
+}
